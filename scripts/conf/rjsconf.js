@@ -1,0 +1,18 @@
+({
+	//baseUrl:'',
+	paths:{
+		'main':'../main',
+		'd3':'../lib/d3',
+		'chart':'../module/chart',
+		'pie':'../module/pie',
+		'radar':'../module/radar',
+		'getColor':'../module/getColor'
+	},
+	shim:{
+		'd3':{
+			exports:'d3'
+		}
+	},
+	name:'main',
+	out:'../../dist/all.js'
+})

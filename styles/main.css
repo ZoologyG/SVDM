@@ -1,0 +1,610 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+div{
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-image:url(../images/bg.jpg);
+	background-repeat:no-repeat; 
+	background-size:100% 100%;
+	background-color: #010F1A;
+}
+
+.cf{
+	content: '';
+	display:table;
+	clear: both;
+}
+
+/* 通用样式 */
+.title{
+	margin-left: 1.587302vh;
+	font-size: 30rem;
+	line-height: 3.650794vh;
+	color:#38AEE1;
+}
+
+.title-little{
+	text-align: center;
+	color:#E8E8E8;
+	font-size: 23rem;
+	line-height: 200%;
+}
+
+.border{
+	border:1px solid #38AEE1;
+	border-radius: 10px;
+}
+
+svg{
+	width:100%;
+	height:100%;
+}
+
+/* 表格 */
+table,th,tr,td{
+	color: #22BBE7;
+	font-size: 22rem;
+	text-align: center;
+}
+table{
+	width: 100%;
+	height:100%;
+	border-collapse:collapse;
+}
+th{
+	width: 50%;
+	height: 3.333333vh;
+	color:#DAD94D;
+	border-top:1px solid #1B5675;
+	background-color: #02253C;
+}
+td{
+	/* line-height: 3.333333vh; */
+	height: 10%;
+	color:#22BBE7;
+	border-top: 1px solid #0E3855;
+	border-bottom:  1px solid #0E3855;
+}
+td.wrect{
+	display: block;
+	width: 100%;
+	height: 100%
+}
+#tableGsfxfx{
+	width: 100%;
+	height: 68%;
+}
+.gsfxfx table thead th:first-child{
+	width: 60%;
+}
+.gsfxfx table thead th:last-child{
+	width: 40%;
+}
+
+.gsfxfx .tbody p{
+	width: 100%;
+	height: 3.10vh;
+}
+.gsfxfx .tbody p span{
+	display: inline-block;
+	line-height: 3.174vh;
+	font-size: 22rem;
+	/* color:#22BBE7; */
+	border-top: 1px solid #0E3855;
+	border-right: none;
+}
+.gsfxfx .tbody p span:first-child{
+	width: 60%;
+	text-indent: 2em;
+}
+.gsfxfx .tbody p span:last-child{
+	width: 40%;
+}
+.gsfxfx .tbody .xxx{
+	text-align: center;
+}
+
+/* h-chart表格 */
+.h-chart th:first-child{
+	width: 8.040201%;
+	text-align: center;
+}
+.h-chart th:nth-child(2){
+	width: 36.683417%;
+}
+
+/* tbody容器大小 */
+.container-tbody{
+	width: 100%;
+	height: 74%;
+}
+
+/* 大标题 */
+.title-bar{
+	width: 100vw;
+	height: 9.365079vh;
+}
+.article{
+	font-size: 80rem;
+	line-height: 8.465vh;
+	text-align: center;
+	color:#C4C6C9;
+}
+.article-hr{
+	width: 31.25%;
+	display: block;
+	margin: 0 auto;
+}
+
+/* 左侧栏目 */
+.container-left{
+	float:left;
+	width: 34.5vw;
+	height:86.4973vh;
+	margin-left:0.78125vw;
+}
+
+/* 左侧头部twins */
+.twins-left{
+	width: 32.5vw;
+	height: 27.407407vh;
+	margin-bottom: 1.481481vh;
+}
+
+/* 车辆违法类型统计 */
+.clwflxtj{
+	float: left;
+	width: 48.8%;
+	height: 100%;
+}
+
+/* 车辆风险预警 */
+.clfxyj{
+	float: right;
+	width: 48.8%;
+	height: 100%;
+}
+#tableClfxyj{
+	width: 100%;
+	height: 85%;
+}
+
+/* 今日车辆类型统计 */
+.jrcllxtj{
+	float: left;
+	width: 10.234375vw;
+	height: 55.608466vh;
+}
+.jrcllxtj .title{
+	margin-bottom: 2vh;
+}
+
+/* 车辆来源 */
+.clly{
+	float: left;
+	width: 100%;
+	height: 18vh;
+}
+#pieClly{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* 车辆类型 */
+.cllx{
+	float: left;
+	width: 100%;
+	height: 18vh;
+}
+#pieCllx{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+#pieExpCllx{
+	width: 80%;
+	height: 50%;
+	margin: 0 auto;
+}
+
+/* 公司风险分析 */
+.gsfxfx{
+	float: left;
+	width: 21.458333vw;
+	height: 22.857143vh;
+	margin-left: 1.640212vh;
+	margin-bottom: 1.534392vh;
+}
+
+/* 公司违法信息统计 */
+.gswfxxtj{
+	float: left;
+	width: 21.458333vw;
+	height: 31.269841vh;
+	margin-left: 1.640212vh;
+}
+#chart1{
+	width: 100%;
+	height: 85%;
+}
+
+
+/* 柱形图--公司违法信息统计 */ 
+#chart1 .xAxis path{
+	fill: none;
+	stroke:#115372;
+	stroke-width: 4px;
+	shape-rendering: crispEdges;
+}
+#chart1 .xAxis line{
+	fill:none;
+}
+#chart1 .xAxis text {
+	/* display: none; */
+	font-family: sans-serif;
+	font-size: 16rem;
+	fill: #7DE3EA;
+}
+#chart1 .yAxis path{
+	fill: none;
+	stroke:#115372;
+	stroke-width: 5px;
+}
+#chart1 .yAxis line{
+	fill: none;
+}
+#chart1 .yAxis text {
+	font-family: sans-serif;
+	font-size: 21rem;
+	fill: #E8E8E8;
+}
+#chart1 .MyRect {
+	fill:#20BBE9;
+}
+#chart1 .MyText text{
+	font-size:20rem;
+	fill: #E8E8E8;
+	text-anchor: middle;
+} 
+
+/* 车辆类型 */
+.clwflx{
+	width:100%;
+	height:31.4286vh;
+}
+.pieExpClwf{
+	position: absolute;
+	color: white;
+	font-size: 20rem;
+	line-height: 150%;
+	list-style: none;
+}
+
+/* 右侧栏目 */
+.container-right{
+	float: right;
+	width: 34.5vw;
+	height: 86.4973vh;
+	margin-right: 0.78125vw;
+}
+
+/* 右侧头部twins */
+.twins-right{
+	float: right;
+	width: 32.5vw;
+	height: 27.407407vh;
+	margin-bottom: 1.428571vh;
+}
+
+/* 当日交通安全态势分析 */
+.drjtaqtsfx{
+	float: left;
+	width: 47.676282%;
+	height: 100%;
+}
+#radarDrjtaq{
+	width: 100%;
+	height: 85%;
+}
+/* #radarDrjtaq svg{
+	transform: rotate(-108deg);
+} */
+/* #radarDrjtaq svg .texts text{
+	transform:translate(-100,-100);
+} */
+
+
+/* 公司预警信息统计 */
+.gsyjxxtj{
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+#tableGsyjxx{
+	width: 100%;
+	height: 85%;
+}
+
+/* 车辆行驶风险预测 */
+.clxsfxyc{
+	float: right;
+	width: 32.5vw;
+	height: 25.555556vh;
+	margin-bottom: 1.693122vh;
+}
+
+/* 折线图标题 */
+/* .clxsfxyc{
+	fill: #8EE15F;
+	font-size: 20rem;
+	text-anchor: end;
+}
+.clxsfxyc .subTitle{
+	fill:#D51F3D;
+	font-size: 20rem;
+	text-anchor: end;
+} */
+#polygonClxs{
+	width: 100%;
+	height: 80%;
+}
+/* 折线图-x轴 */
+#polygonClxs .x.axis path{
+	fill: none;
+	stroke:#115372;
+	stroke-width: 3px;
+	shape-rendering: crispEdges;
+}
+#polygonClxs .x.axis line {
+	fill: none;
+	stroke: #115372ed;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+#polygonClxs .x.axis text {
+	font-size: 20rem;
+	fill:#80E8EF;
+}
+/* 折线图-y轴 */
+#polygonClxs .y.axis path{
+	fill: none;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+#polygonClxs .y.axis line {
+	fill: none;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+#polygonClxs .y.axis text {
+	font-size: 24rem;
+	fill:white;
+}
+/* 折线图-折线 */
+#polygonClxs .inner_line path,
+#polygonClxs .inner_line line {
+	fill: none;
+	stroke:#304E70;
+	shape-rendering: crispEdges;
+}
+
+/* 实时概况 */
+.ssgk{
+	float: right;
+	width: 32.5vw;
+	height: 28.454497vh;
+}
+#dbchartSsgk{
+	width: 100%;
+	height: 82%;
+}
+
+/* 双柱形图-实时概况 */
+	/* x轴 */
+.x.axis path {
+	fill: none;
+	stroke: #115372;
+	stroke-width: 6px;
+}
+.x.axis line {
+	display: none;
+}
+.x.axis text {
+	display: none;
+	fill: #83ECF3;
+	font-size: 22rem;
+}
+.inner_line line{
+	fill: none;
+	stroke: #115372;
+	stroke-width: 1px;
+}
+	
+/* 左侧y0轴 */
+.y.axisLeft path {
+	fill: none;
+	stroke: #115372;
+	stroke-width: 6px;
+}
+.y.axisLeft line {
+    display: none;
+}
+.y.axisLeft text {
+    fill: #E8E8E8;
+	font-size: 22rem;
+}
+
+/* 右侧y轴 */
+.y.axisRight path {
+	fill: none;
+	stroke: #115372;
+	stroke-width: 6px;
+}
+.y.axisRight line {
+    display: none;
+}
+.y.axisRight text {
+    fill: #E8E8E8;
+	font-size: 22rem;
+}
+
+
+/* .bar1 {
+  fill: steelblue;
+} */
+.bar2 {
+    fill: #84DF56;
+}
+
+
+
+/* 统计信息 */
+.info{
+	opacity: 1;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%);
+	top:12vh;
+	width: 29.5573vw;
+	text-align: center;
+	font-size: 30rem;
+}
+.info-list{
+	list-style: none;
+	color:#20BBE9;
+}
+.info-list li{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-size: 45rem;
+}
+
+/* 中国地图 */
+.china-map{
+	opacity: 1;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-46%,-50%);
+	width: 38vw;
+	height: 30.5vw;
+}
+
+/* 预警信息 */
+.yjxx{
+	position: absolute;
+	left:50%;
+	transform: translate(-50%);
+	top: 76.190476vh;
+	width: 32.135417vw;
+	height: 17.619048vh;
+}
+.yjxx>div{
+	float: left;
+	width: 33.3%;
+	height: 100%;
+}
+.yjxx .con{
+	width: 100%;
+	height: 100%;
+}
+/* .yjxx p{
+	width: 100%;
+	color: #E8E8E8;
+	font-size: 30rem;
+	text-align: center;
+} */
+
+
+/* pie1饼形图 */
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: 0.8;
+	stroke: white;
+	stroke-width: 2px;
+	fill: none;
+}
+
+/* 雷达图 */
+.main{
+
+}
+.webs polygon,
+.lines line {
+  fill: #00192F;
+  /* fill-opacity: 0.5; */
+  stroke:#1DB2DD;
+  /* stroke-dasharray: 10 5; */
+}
+/* .webs polygon:nth-child(odd) {
+  fill: lightgray;
+} */
+.areas polygon {
+  fill-opacity: 0.5;
+  stroke-width: 3px;
+}
+.areas circle {
+  fill: white;
+  /* stroke:#C4E330; */
+  stroke-width: 3px;
+}
+.texts text {
+  fill: #38AEE1;
+  text-anchor: middle;
+  font-size: 20rem;
+}
+
+
+/* 折线图 */
+
+.axis-x path,
+.axis-x line {
+fill: none;
+stroke: #115373;
+shape-rendering: crispEdges;
+}
+
+.axis-y path,
+.axis-y line {
+fill: none;
+stroke: #115373;
+shape-rendering: crispEdges;
+}
+
+.axis-x text {
+font-family: sans-serif;
+font-size: 20rem;
+fill:#84EDF1;
+}
+
+.axis-y text {
+font-family: sans-serif;
+font-size: 20rem;
+fill:white;
+}
+	
+.inner_line path,
+.inner_line line {
+fill: none;
+stroke:#11546F;
+shape-rendering: crispEdges;
+}
+
+.legend{font-size: 12px; font-family:Arial, Helvetica, sans-serif}

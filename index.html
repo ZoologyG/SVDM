@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="">
+  	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico">
+		<script src="scripts/rem.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+	  	<title>智能交通指挥中心</title>
+  	</head>
+    <body>
+
+		<!-- 标题 -->
+		<div class="title-bar">
+			<!-- <h1 class="article">车辆运行分析与监测系统</h1>
+			<img class="article-hr" src="images/title-hr.jpg"> -->
+		</div>			
+		
+		<!-- 中国地图 -->
+		<div id="map" class="china-map"></div>
+
+		<!-- 左侧栏目 -->
+		<div class="container-left">
+
+			<!-- 左侧头部twins -->
+			<div class="twins-left">
+
+				<!-- 车辆违法类型统计 -->
+				<div class="clwflxtj border">
+					<h1 class="title">车辆违法类型统计</h1>
+					<!-- 表格容器 -->
+					<div class="h-chart">
+						<table>
+							<thead>
+								<th>序<br>号</th>
+								<th>违法类型</th>
+								<th>违法行为</th>
+							</thead>
+						</table>
+					</div>
+					<div id="hChartL" class="container-tbody"></div>
+				</div>
+
+				<!-- 车辆风险预警 -->
+				<div class="clfxyj border">
+					<h1 class="title">车辆风险预警</h1>
+					<!-- 表格容器 -->
+					<div id="tableClfxyj">
+						<table>
+							<thead>
+								<th>车牌号</th>
+								<th>风险因素</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+				
+			<!-- 今日车辆类型统计 -->
+			<div class="jrcllxtj border">
+				<h1 class="title">今日车辆类型统计</h1>
+				<h2 class="title-little">车辆来源</h2>
+				<!-- 车辆来源 -->
+				<div class="clly">
+					<div id="pieClly"></div>
+				</div>
+
+				<!-- 车辆类型 -->
+				<div class="cllx">
+					<h2 class="title-little">车辆类型</h2>
+					<!-- 饼图容器 -->
+					<div id="pieCllx"></div>
+					<!-- 饼图说明 -->
+					<div id="pieExpCllx"></div>
+				</div>
+			</div>
+
+			<!-- 公司风险分析 -->
+			<div class="gsfxfx border">
+				<h1 class="title">公司风险分析</h1>
+				<!-- 表格容器 -->
+				<div id="tableGsfxfx">
+					<table>
+						<thead>
+							<th>营运公司名称</th>
+							<th>风险评价</th>
+						</thead>
+					</table>
+					<div class="tbody">
+						<p><span></span><span class="xxx"></span></p>
+						<p><span></span><span class="xxx"></span></p>
+						<p><span></span><span class="xxx"></span></p>
+						<p><span></span><span class="xxx"></span></p>
+						<p><span></span><span class="xxx"></span></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 公司违法信息统计 -->
+			<div class="gswfxxtj border">
+				<h1 class="title">公司违法信息统计</h1>
+				<!-- 柱形图容器 -->
+				<div id="chart1"></div>
+			</div>
+		</div>
+
+		<!-- 右侧栏目 -->
+		<div class="container-right">
+
+			<!-- 右侧头部twins -->
+			<div class="twins-right">
+
+				<!-- 当日交通安全态势分析 -->
+				<div class="drjtaqtsfx border">
+					<h1 class="title">当日交通安全态势分析</h1>
+					<!-- 雷达图容器 -->
+					<div id="radarDrjtaq"></div>
+				</div>
+
+				<!-- 公司预警信息统计 -->
+				<div class="gsyjxxtj border">
+					<h1 class="title">公司预警信息统计</h1>
+					<!-- 表格容器 -->
+					<div class="h-chart">
+						<table>
+							<thead>
+								<th>序<br>号</th>
+								<th>营运公司</th>
+								<th>预警信息</th>
+							</thead>
+						</table>
+					</div>
+					<div id="hChartR" class="container-tbody"></div>
+				</div>
+				
+			</div>
+
+			<!-- 车辆行驶风险预测 -->
+			<div class="clxsfxyc border">
+				<h1 class="title">车辆行驶风险预测</h1>
+				<!-- 折线图容器 -->
+				<div id="polygonClxs"></div>
+			</div>
+			
+			<!-- 实时概况 -->
+			<div class="ssgk border">
+				<h1 class="title">实时概况</h1>
+				<!-- 双柱图容器 -->
+				<div id="dbchartSsgk"></div>
+			</div>
+			
+		</div>
+
+		<!-- 统计信息 -->
+		<div class="info">
+			<ul id="total_info" class="info-list">
+				<li><p></p><p></p></li>
+				<li><p></p><p></p></li>
+				<li><p></p><p></p></li>
+				<li><p></p><p></p></li>
+			</ul>
+		</div>
+
+		<!-- 预警信息 -->
+		<div class="yjxx border">
+			<!-- 客运 -->
+			<div>
+				<div id="conKy" class="con">
+				</div>
+			</div>
+			<!-- 危险品 -->
+			<div>
+				<div id="conWxp" class="con"></div>
+			</div>
+			<!-- 货运 -->
+			<div>
+				<div id="conHy" class="con"></div>
+			</div>
+		</div>
+		<script data-main="scripts/main" defer async="async" src="scripts/lib/require.js"></script>
+	</body>
+</html>
